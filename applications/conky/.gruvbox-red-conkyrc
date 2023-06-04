@@ -1,0 +1,38 @@
+background yes
+use_xft yes
+xftfont ttyclock:size=60
+xftalpha 0.5
+update_interval 1
+total_run_times 0
+border_width 1
+own_window yes
+own_window_class Conky
+own_window_type override
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent no
+own_window_colour 282828
+double_buffer yes
+
+minimum_width 800
+minimum_size 1920 1080
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+
+alignment top_left
+stippled_borders 3
+border_inner_margin 4 
+border_width 5
+
+no_buffers yes
+uppercase no
+cpu_avg_samples 5
+net_avg_samples 1
+
+use_spacer right
+text_buffer_size 256
+
+TEXT
+${color #cc241d}${alignc}${offset 14}${voffset 400}${time %H:}${voffset 0}${color #cc241d}${alignc}${offset 14}${time %M:}${voffset 0}${color #cc241d}${alignc}${offset 14}${time %S}
+
